@@ -16,15 +16,12 @@
   <div class="color blue" id="blue"></div>
 </div>
 <script>
-  $('#green').click( function(){
-      $('#texte').css('color', 'green');
+  $(function(){
+    $('.color').click(function(){
+      divColor = $(this).attr('id');
+      $('#texte').css('color', divColor);
     });
-  $('#red').click( function(){
-      $('#texte').css('color', 'red');
-    });
-  $('#blue').click( function(){
-      $('#texte').css('color', 'blue');
-    });
+  });
 </script>
 </body>
 </html>
